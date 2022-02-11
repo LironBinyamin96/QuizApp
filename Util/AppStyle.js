@@ -147,6 +147,28 @@ export default StyleSheet.create({
         alignItems:'center',
         justifyContent:'center',
     },
+    ButtonContainerForLose:{
+        margin:30,
+        width:260,
+        height:70,
+        borderRadius:15,
+        borderWidth: 5,
+        borderColor: Colors.red_for_lose,
+        backgroundColor:Colors.white,
+        alignItems:'center',
+        justifyContent:'center',
+    },
+    ButtonContainerForWin:{
+        margin:30,
+        width:260,
+        height:70,
+        borderRadius:15,
+        borderWidth: 5,
+        borderColor: Colors.green_for_win,
+        backgroundColor:Colors.white,
+        alignItems:'center',
+        justifyContent:'center',
+    },
     FontContainer:
     {
         fontSize:45,
@@ -184,6 +206,7 @@ export default StyleSheet.create({
         padding:20,
         fontSize:25,
         textAlign:'center',
+        marginTop:300,
     },
 
     FontForAnswers:

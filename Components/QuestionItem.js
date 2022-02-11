@@ -30,11 +30,6 @@ import Styles from '../Util/AppStyle';
     return newString
   }
 
-
-
-
-
-
 const QuestionItem = props => {
   const timeToTimer= () =>{
     if ((props.questionItem.id)+1 <=10){
@@ -52,6 +47,7 @@ const QuestionItem = props => {
     props.onNextQuestion(props.questionItem.id);
   }
 
+
     return (
     <View>
 
@@ -65,7 +61,7 @@ const QuestionItem = props => {
             <Text style= {{fontWeight:'bold'}}>Level: <Text style={{ fontWeight: 'bold', color: StatusColor(props.questionItem.difficulty) }} >{props.questionItem.difficulty}</Text>{"\n"}{"\n"}</Text>
           </View>
           <View>
-             <Text style= {{fontSize:25}}>{CleanString(props.questionItem.title)} {"\n"} {"\n"}</Text>
+             <Text style= {{fontSize:25}}>{CleanString(props.questionItem.title)} {"\n"}{"\n"}</Text>
              {
                  props.questionItem.answers.map((answer , index)=>(
                     <TouchableOpacity key={index} style={Styles.ButtonQuestion} onPress={() => {
@@ -78,18 +74,19 @@ const QuestionItem = props => {
              }
           </View>
           <View>
+          <Text> {"\n"}{"\n"} </Text>
       <CountDown 
         until={timeToTimer()}
         onFinish={() => finishedTimer()}
         digitStyle={{backgroundColor: Colors.white,
-          borderRadius: 100,
-           borderWidth: 2,
+          borderRadius: 50,
+           borderWidth: 8,
           borderColor: Colors.blue,}}
         timeToShow={['S']}
         timeLabels={{s: null}}
-
-        size={20}
-      />
+        size={40}
+        
+              />
           </View>
             </View>
             

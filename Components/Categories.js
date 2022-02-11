@@ -14,6 +14,11 @@ import Styles from '../Util/AppStyle';
 
           <View style={Styles.View80}>
           <TouchableOpacity style={Styles.ButtonCategories}
+            onPress = {() => {props.navigation.navigate('QuizScreen',{allData: 9})}} >
+            <Text style={Styles.FontCategories}>General Knowledge</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={Styles.ButtonCategories}
              onPress = {() => {props.navigation.navigate('QuizScreen',{allData: 21})}} >
             <Text style={Styles.FontCategories}>Sports</Text>
           </TouchableOpacity>
@@ -26,6 +31,11 @@ import Styles from '../Util/AppStyle';
           <TouchableOpacity style={Styles.ButtonCategories}
             onPress = {() => {props.navigation.navigate('QuizScreen',{allData: 23})}} >
             <Text style={Styles.FontCategories}>History</Text>
+          </TouchableOpacity>
+
+          <TouchableOpacity style={Styles.ButtonCategories}
+            onPress = {() =>{props.navigation.navigate('QuizScreen',{allData: 15})}} >
+            <Text style={Styles.FontCategories}>Video Games</Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={Styles.ButtonCategories}

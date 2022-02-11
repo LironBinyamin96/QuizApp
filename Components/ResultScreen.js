@@ -19,6 +19,12 @@ import Styles from '../Util/AppStyle';
            <Text style={Styles.FontForResult}>You need to answer 10 correct answers</Text>
           <Image source={require('../assets/images/failed_character.png')} style={Styles.ImageForWinAndLose}/>
           </View>
+          <View>
+          <TouchableOpacity style={Styles.ButtonContainerForLose}
+            onPress = {() => {props.navigation.navigate('Categories',{})}} >
+            <Text style={Styles.FontForResult} >Let's Play Again</Text>
+          </TouchableOpacity>
+          </View>
         </View>
       </View>
       ):(
@@ -33,6 +39,12 @@ import Styles from '../Util/AppStyle';
           <View>
            <Text style={Styles.FontForResult}> You answered {winOrLoseScreen} questions correctly</Text>
           <Image source={require('../assets/images/success_character.png')} style={Styles.ImageForWinAndLose}/>
+          </View>
+          <View>
+            <TouchableOpacity style={Styles.ButtonContainerForWin}
+            onPress = {() => {props.navigation.navigate('Categories',{})}} >
+            <Text style={Styles.FontForResult} >Let's Play Again</Text>
+          </TouchableOpacity>
           </View>
         </View>
       </View>
