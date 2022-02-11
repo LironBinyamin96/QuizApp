@@ -2,6 +2,7 @@ import React from "react";
 import { createStackNavigator } from '@react-navigation/stack';
 import Colors from '../Util/AppColors';
 
+
 //TODO IMPORT SCREENS
 import DashboardScreen, {screenOptions as DashboardScreenOptions} from './Dashboard';
 import CategoriesScreen,{screenOptions as CategoriesScreenOptions} from './Categories';
