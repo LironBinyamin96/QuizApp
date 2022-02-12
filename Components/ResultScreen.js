@@ -16,7 +16,7 @@ import Styles from '../Util/AppStyle';
            <Text style={Styles.FontForLose}> FAILED </Text>
           </View>
           <View>
-           <Text style={Styles.FontForResult}>You need to answer 10 correct answers</Text>
+           <Text style={Styles.FontForResult}>You need to answer 10 questions correctly</Text>
           <Image source={require('../assets/images/failed_character.png')} style={Styles.ImageForWinAndLose}/>
           </View>
           <View>

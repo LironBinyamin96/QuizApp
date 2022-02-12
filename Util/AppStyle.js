@@ -86,7 +86,7 @@ export default StyleSheet.create({
         justifyContent:'center',
         paddingTop:50,
         alignItems:'flex-end',
-       marginTop:23,
+       marginTop:20,
        marginRight:10
     },
     ViewForLose15:{
@@ -206,7 +206,7 @@ export default StyleSheet.create({
         padding:20,
         fontSize:25,
         textAlign:'center',
-        marginTop:300,
+        
     },
 
     FontForAnswers:
@@ -226,6 +226,13 @@ export default StyleSheet.create({
         borderRadius: 100,
          borderWidth: 2,
         borderColor: Colors.blue,
+    },
+    loadingfont:{
+        justifyContent: 'center',
+        textAlign:'center',
+        marginTop:500,
+        fontSize: 35,
+        
     }
 
 

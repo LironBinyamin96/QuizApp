@@ -75,9 +75,11 @@ const QuestionItem = props => {
           </View>
           <View>
           <Text> {"\n"}{"\n"} </Text>
+      
       <CountDown 
+        
         until={timeToTimer()}
-        onFinish={() => finishedTimer()}
+        onFinish={() => props.onNextQuestion(props.questionItem.id)}
         digitStyle={{backgroundColor: Colors.white,
           borderRadius: 50,
            borderWidth: 8,
@@ -86,7 +88,8 @@ const QuestionItem = props => {
         timeLabels={{s: null}}
         size={40}
         
-              />
+            />  
+            
           </View>
             </View>
             

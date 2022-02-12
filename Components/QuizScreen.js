@@ -120,7 +120,7 @@ const QuizScreen = props => {
 
   return (
     <View >
-    {question.length >0 ? (questionsUI) : (<Text style={Styles.FontForResult}> Loading...</Text>)}
+    {question.length >0 ? (questionsUI) : (<Text style={Styles.loadingfont}> Loading...</Text>)}
     </View>
   );
 }
