@@ -43,9 +43,7 @@ const QuestionItem = props => {
     }
   }
 
-  const finishedTimer= () =>{
-    props.onNextQuestion(props.questionItem.id);
-  }
+
 
 
     return (
